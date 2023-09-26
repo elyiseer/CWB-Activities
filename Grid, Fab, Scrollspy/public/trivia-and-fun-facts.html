@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Bangers&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Looney Tunes | Trivia & Fun Facts</title>
+</head>
+
+<style>
+    body {
+        font-family: 'Fredoka';
+    }
+</style>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="flex-container">
+                <div class="container">
+                    <a href="" class="brand-logo">Looney Tunes</a>
+                    <div class="nav-menu right">
+                        <ul>
+                            <li><a href="index.html" class="btn">Home</a></li>
+                            <li><a href="trivia-and-fun-facts.html" class="btn">Triva</a>
+                            </li>
+                            <li><a href="#" class="btn">Wala pa Laman</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="right hide-on-large-only hamburger"><i class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <a href="index.html">
+                        <h3>Home</h3>
+                    </a>
+                </div>
+                <div class="col s12 center-align">
+                    <a href="trivia-and-fun-facts.html">
+                        <h3>Triva & Fun Facts</h3>
+                    </a>
+                </div>
+                <div class="col s12 center-align btn">
+                    <a href="#">
+                        <h3>Wala pa Laman</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+    <img src="images/LooneyTunes.jpg" alt="" class="z-depth-2 responsive-img">
+    <div class="row">
+        <div class="col s12">
+            <div class="container">
+                <h1 style="font-family: 'Bangers';">Trivia</h1>
+                <p class="flow-text">Welcome to the world of Looney Tunes trivia! Test your knowledge and discover fun
+                    facts about your favorite characters. Let's dive in and have some animated fun!</p>
+            </div>
+        </div>
+        <div class="col s12 m6 l4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/Barnyard_Dog.png">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title<i
+                            class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i
+                            class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l6">
+            <p class="flow-text">Bugs Bunny's Debut: Bugs Bunny made his official debut in the cartoon "A Wild Hare" in
+                1940. This cartoon marked the beginning of his iconic career.</p>
+        </div>
+        <div class="col s12 l6">
+            <p class="flow-text">Bugs Bunny's Debut: Bugs Bunny made his official debut in the cartoon "A Wild Hare" in
+                1940. This cartoon marked the beginning of his iconic career.</p>
+        </div>
+        <div class="col s12 l6">
+            <p class="flow-text">Bugs Bunny's Debut: Bugs Bunny made his official debut in the cartoon "A Wild Hare" in
+                1940. This cartoon marked the beginning of his iconic career.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.parallax').parallax();
+            $('.modal').modal({
+                opacity: 0.51,
+                startingTop: '0%',
+                endingTop: '0%'
+            });
+        });
+
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".nav-menu");
+            navBar.classList.toggle("active");
+        } 
+    </script>
+</body>
+
+</html>
